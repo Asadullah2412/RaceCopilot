@@ -3,16 +3,16 @@ from dotenv import load_dotenv
 import os
 
 api_key = os.getenv("GEMINI_API_KEY")
-print(api_key)
-client = genai.Client()
+# print(api_key)
+# client = genai.Client()
 
-exp_prompt = "did few laps around spa in aston martin gt3 on asseto corsa competizone , i got lap time of 1.20 to 1.25 help me to improve the lap time"
+# exp_prompt = "did few laps around spa in aston martin gt3 on asseto corsa competizone , i got lap time of 1.20 to 1.25 help me to improve the lap time"
 
-response = client.models.generate_content(
-    model= 'gemini-2.5-flash-lite',
-    contents= exp_prompt)
+# response = client.models.generate_content(
+#     model= 'gemini-2.5-flash-lite',
+#     contents= exp_prompt)
 
-print(response.text)
+# print(response.text)
                                   
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------
 import streamlit as st
@@ -80,7 +80,7 @@ OPENROUTER_MODELS = {
     "Gemma 3 12B (Free)":         "google/gemma-3-12b-it:free",
 }
 
-def generate_with_openrouter(transcript_text: str, prompt: str, model: str) -> str | None:
+def generate_with_openrouter(prompt: str, model: str) -> str | None:
     if OpenAI is None:
         st.error("❌ openai not installed. Run: pip install openai")
         return None
@@ -93,7 +93,7 @@ def generate_with_openrouter(transcript_text: str, prompt: str, model: str) -> s
 
         response = client.chat.completions.create(
             model=model,
-            messages=[{"role": "user", "content": prompt + transcript_text}],
+            messages=[{"role": "user", "content": prompt}],
         )
 
         st.caption(f"✅ Used OpenRouter model: `{model}`")
