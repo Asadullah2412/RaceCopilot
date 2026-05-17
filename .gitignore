@@ -1,1 +1,7 @@
 .env
+demo.ipynb
+.vscode/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
