@@ -1,5 +1,7 @@
 # 🏁 Race Copilot
 
+app link[[text](https://racecopilot.streamlit.app/)]
+
 > A production-style AI race engineer assistant for sim racers, powered by the Google Gemini GenAI API.
 
 Pit Wall AI is a domain-specialized conversational assistant built for sim racing drivers. Instead of acting like a generic chatbot, Pit Wall AI behaves like a virtual GT race engineer — analyzing driver debriefs, diagnosing handling problems, suggesting setup adjustments, and coaching driving technique.
