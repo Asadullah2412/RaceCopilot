@@ -105,6 +105,8 @@ UI design highlights:
 * compact information density
 * racing-focused UX
 
+![alt text](<ui.png>)
+
 ---
 
 # 🏗️ System Architecture
