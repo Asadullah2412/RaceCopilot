@@ -17,7 +17,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+# MainMenu, footer, header { visibility: hidden; }
 # ─────────────────────────────────────────────
 # CUSTOM CSS
 # ─────────────────────────────────────────────
@@ -272,7 +272,8 @@ html, body, [class*="css"] {
 }
 
 /* ── Streamlit chrome cleanup ── */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
 .block-container { padding-top: 2rem; padding-bottom: 2rem; }
 </style>
 """, unsafe_allow_html=True)
