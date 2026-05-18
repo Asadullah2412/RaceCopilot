@@ -1,6 +1,6 @@
 # 🏁 Race Copilot
 
-app link[[text](https://racecopilot.streamlit.app/)]
+[app link](https://racecopilot.streamlit.app/)
 
 > A production-style AI race engineer assistant for sim racers, powered by the Google Gemini GenAI API.
 
